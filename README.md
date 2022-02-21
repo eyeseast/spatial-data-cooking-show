@@ -23,7 +23,17 @@ These libraries aren't included in the `Pipfile` but could be useful:
 
 ## What should I use this for?
 
-...
+Over the past year, I've started using this set of libraries to quickly explore, reshape and reformat data for visualization in news projects. My workflow usually involves three phases: loading, exploration, export.
+
+### Loading data
+
+For self-contained datasets, I use [geojson-to-sqlite](https://github.com/simonw/geojson-to-sqlite). (For shapefiles, I usually transform data to GeoJSON first using `ogr2ogr`, but [shapefile-to-sqlite](https://github.com/simonw/shapefile-to-sqlite) is also available.)
+
+For tabular data, I use [`sqlite-utils`](https://sqlite-utils.datasette.io/en/stable/cli.html#inserting-csv-or-tsv-data).
+
+### Exploration
+
+### Export
 
 ## Datasets to test out
 
