@@ -13,6 +13,14 @@ This is a demo project and template repository showing how I use SpatiaLite with
 
 Run `pipenv install` to create a virtual environment and get the latest version of everything. I also recommend installing [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index).
 
+### You might also use ...
+
+These libraries aren't included in the `Pipfile` but could be useful:
+
+- [geocode-sqlite](https://github.com/eyeseast/geocode-sqlite) will run a geocoder on every row in a table, saving the results to `latitude` and `longitude` columns.
+- [datasette-leaflet-geojson](https://github.com/simonw/datasette-leaflet-geojson) renders a map for each feature row.
+- [datasette-cluster-map](https://github.com/simonw/datasette-cluster-map) will cluster points for rows with `longitude` and `latitude` columns. This won't work with [datasette-geojson-map](https://github.com/eyeseast/datasette-geojson-map), so choose one or the other.
+
 ## What should I use this for?
 
 ...
