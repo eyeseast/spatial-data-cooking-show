@@ -26,3 +26,4 @@ Run `pipenv install` to create a virtual environment and get the latest version 
 - [Wildfires](https://data-nifc.opendata.arcgis.com/)
 - [Flood hazards](https://www.fema.gov/flood-maps/national-flood-hazard-layer)
 - [California Protected Lands](https://www.calands.org/cpad/) - More information [here](https://simonwillison.net/2021/Jan/24/drawing-shapes-spatialite/)
+- [Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw)
