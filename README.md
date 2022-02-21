@@ -16,3 +16,12 @@ Run `pipenv install` to create a virtual environment and get the latest version 
 ## What should I use this for?
 
 ...
+
+## Datasets to test out
+
+- US Census data from [NHGIS](https://www.nhgis.org/) or [Census Reporter](https://censusreporter.org/)
+- [All the Places](https://www.alltheplaces.xyz/)
+- [US Drought Monitor](https://droughtmonitor.unl.edu/DmData/GISData.aspx)
+- [Earthquakes](https://www.usgs.gov/programs/earthquake-hazards/data)
+- [Wildfires](https://data-nifc.opendata.arcgis.com/)
+- [Flood hazards](https://www.fema.gov/flood-maps/national-flood-hazard-layer)
