@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+datasette = "*"
+sqlite-utils = "*"
+geojson-to-sqlite = "*"
+datasette-geojson-map = "*"
+sqlite-colorbrewer = "*"
+
+[dev-packages]
+ipython = "*"
+
+[requires]
+python_version = "3.10"
