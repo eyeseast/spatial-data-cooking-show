@@ -25,3 +25,4 @@ Run `pipenv install` to create a virtual environment and get the latest version 
 - [Earthquakes](https://www.usgs.gov/programs/earthquake-hazards/data)
 - [Wildfires](https://data-nifc.opendata.arcgis.com/)
 - [Flood hazards](https://www.fema.gov/flood-maps/national-flood-hazard-layer)
+- [California Protected Lands](https://www.calands.org/cpad/) - More information [here](https://simonwillison.net/2021/Jan/24/drawing-shapes-spatialite/)
