@@ -2,6 +2,8 @@
 
 This is a demo project and template repository showing how I use SpatiaLite with Datasette for quick spatial analysis.
 
+**Live show notes**: https://docs.google.com/document/d/1z30ZCWGsR_jr6EuHKukJ4kTZQMBryrrEkIgo_5twZjo/edit
+
 ## Why SQL, SQLite and Datasette
 
 SQL is old. It's boring. It's [widely adopted](https://en.wikipedia.org/wiki/List_of_relational_database_management_systems) and not controlled by a company that might change it or shut it down next year.
