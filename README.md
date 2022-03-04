@@ -2,14 +2,22 @@
 
 This is a demo project and template repository showing how I use SpatiaLite with Datasette for quick spatial analysis.
 
+## Why SQL, SQLite and Datasette
+
+SQL is old. It's boring. It's [widely adopted](https://en.wikipedia.org/wiki/List_of_relational_database_management_systems) and not controlled by a company that might change it or shut it down next year.
+
+[SQLite](https://www.sqlite.org/index.html) is a database in a single file. It's fast and durable. It's easy, both in code and in my head, to make and delete and remake lots -- hundreds -- of little databases. They're just files.
+
+There are a lot of shiny, brittle things out there. This is [cast iron coding](https://twitter.com/eads/status/1072955829412921356).
+
 ## Libraries included
 
-- [datasette](https://docs.datasette.io/en/stable/)
-- [sqlite-utils](https://sqlite-utils.datasette.io/en/stable/)
-- [geojson-to-sqlite](https://github.com/simonw/geojson-to-sqlite)
-- [datasette-geojson](https://github.com/eyeseast/datasette-geojson)
-- [datasette-geojson-map](https://github.com/eyeseast/datasette-geojson-map)
-- [sqlite-colorbrewer](https://github.com/eyeseast/sqlite-colorbrewer)
+- [datasette](https://docs.datasette.io/en/stable/) is open source multi-tool for exploring and publishing data
+- [sqlite-utils](https://sqlite-utils.datasette.io/en/stable/) is a suite of utility functions for manipulating SQLite databases
+- [geojson-to-sqlite](https://github.com/simonw/geojson-to-sqlite) loads GeoJSON into a SQLite database
+- [datasette-geojson](https://github.com/eyeseast/datasette-geojson) adds GeoJSON output to Datasette
+- [datasette-geojson-map](https://github.com/eyeseast/datasette-geojson-map) renders a map for geographic queries
+- [sqlite-colorbrewer](https://github.com/eyeseast/sqlite-colorbrewer) adds a `colorbrewer` function to SQLite
 
 Run `pipenv install` to create a virtual environment and get the latest version of everything. I also recommend installing [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index).
 
@@ -20,6 +28,7 @@ These libraries aren't included in the `Pipfile` but could be useful:
 - [geocode-sqlite](https://github.com/eyeseast/geocode-sqlite) will run a geocoder on every row in a table, saving the results to `latitude` and `longitude` columns.
 - [datasette-leaflet-geojson](https://github.com/simonw/datasette-leaflet-geojson) renders a map for each feature row.
 - [datasette-cluster-map](https://github.com/simonw/datasette-cluster-map) will cluster points for rows with `longitude` and `latitude` columns. This won't work with [datasette-geojson-map](https://github.com/eyeseast/datasette-geojson-map), so choose one or the other.
+- [census-map-downloader](https://github.com/datadesk/census-map-downloader) to grab Census boundaries.
 
 ## What should I use this for?
 
@@ -41,9 +50,19 @@ If you are new to Datasette, [this tutorial](https://datasette.io/tutorials/expl
 
 Once you have data in SpatiaLite, every SQL query that includes a `geometry` column will now include a map. (If you're using `leaflet-marker-cluster`, you'll see a map if your query includes `longitude` and `latitude` columns.) Use queries to see different slices of the data.
 
-TODO: Link to examples.
+Here's a map of [counties in Massachusetts](https://alltheplaces-datasette.fly.dev/alltheplaces/counties?_sort=geoid&state_fips__exact=25).
 
-With `sqlite-colorbrewer`, it's possible to color features based on data. (Again, make some examples.)
+Using `datasette-geojson-map` lets you style map features using [Mapbox's simple-style-spec](https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0). Github [also supports this](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files#styling-features) for GeoJSON and TopoJSON files.
+
+With `sqlite-colorbrewer`, it's possible to color features based on data.
+
+Here are [countries in Asia, in color](https://nicar22-seismic-datasette.fly.dev/quakes/countries_in_color).
+
+Combine those, and we can start using Datasette for exploratory visualization:
+
+- [Dunkin vs Starbucks in Suffolk Co, MA](https://alltheplaces-datasette.fly.dev/alltheplaces/dunkin_in_suffolk)
+- [Seismic risk in the United States](https://nicar22-seismic-datasette.fly.dev/quakes/risk)
+- [In-N-Out & Earthquakes](https://nicar22-seismic-datasette.fly.dev/quakes/risk_innout_indexed)
 
 ### Export
 
