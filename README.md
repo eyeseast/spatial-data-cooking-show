@@ -87,6 +87,12 @@ That assumes I've loaded whatever I need into `project.db` and created a canned 
 
 My goal in this step is to end up with a file that won't need any further filtering or processing once I pull it into a frontend tool.
 
+Here are static versions of the examples above:
+
+- [Dunkin vs Starbucks in Suffolk Co, MA](https://github.com/eyeseast/alltheplaces-datasette/blob/main/exports/dunkin_in_suffolk.geojson)
+- [Seismic risk in the United States](https://github.com/eyeseast/seismic-analysis/blob/main/exports/risk.geojson)
+- [In-N-Out & Earthquakes](https://github.com/eyeseast/seismic-analysis/blob/main/exports/risk_innout.geojson)
+
 ## Datasets to test out
 
 - US Census data from [NHGIS](https://www.nhgis.org/) or [Census Reporter](https://censusreporter.org/)
