@@ -1,4 +1,4 @@
 
 run:
-	# this will fail if no databases exist
-	pipenv run datasette serve *.db -m metadata.yml --load-extension spatialite
+	# https://docs.datasette.io/en/stable/settings.html#configuration-directory-mode
+	pipenv run datasette serve . --load-extension spatialite
