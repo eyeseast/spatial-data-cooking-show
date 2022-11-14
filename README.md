@@ -54,7 +54,7 @@ Once you have data in SpatiaLite, every SQL query that includes a `geometry` col
 
 Here's a map of [counties in Massachusetts](https://alltheplaces-datasette.fly.dev/alltheplaces/counties?_sort=geoid&state_fips__exact=25).
 
-Using `datasette-geojson-map` lets you style map features using [Mapbox's simple-style-spec](https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0). Github [also supports this](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files#styling-features) for GeoJSON and TopoJSON files.
+Using `datasette-geojson-map` lets you style map features using [Mapbox's simple-style-spec](https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0).
 
 With `sqlite-colorbrewer`, it's possible to color features based on data.
 
