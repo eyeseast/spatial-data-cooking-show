@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "spatial-data-cooking-show"
+version = "0.1.0"
+description = "A demo project and template repository showing how I use SpatiaLite with Datasette for quick spatial analysis."
+authors = ["Chris Amico <eyeseast@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spatial_data_cooking_show"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+datasette = "^0.64.6"
+sqlite-utils = "^3.36"
+geojson-to-sqlite = "^1.1.1"
+datasette-geojson-map = "^0.4.0"
+sqlite-colorbrewer = "^0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

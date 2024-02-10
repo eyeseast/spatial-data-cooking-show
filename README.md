@@ -21,11 +21,11 @@ There are a lot of shiny, brittle things out there. This is [cast iron coding](h
 - [datasette-geojson-map](https://github.com/eyeseast/datasette-geojson-map) renders a map for geographic queries
 - [sqlite-colorbrewer](https://github.com/eyeseast/sqlite-colorbrewer) adds a `colorbrewer` function to SQLite
 
-Run `pipenv install` to create a virtual environment and get the latest version of everything. I also recommend installing [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index).
+Run `poetry install` to create a virtual environment and get the latest version of everything. I also recommend installing [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index).
 
 ### You might also use ...
 
-These libraries aren't included in the `Pipfile` but could be useful:
+These libraries aren't included in the default dependencies but could be useful:
 
 - [geocode-sqlite](https://github.com/eyeseast/geocode-sqlite) will run a geocoder on every row in a table, saving the results to `latitude` and `longitude` columns.
 - [datasette-leaflet-geojson](https://github.com/simonw/datasette-leaflet-geojson) renders a map for each feature row.
@@ -78,7 +78,7 @@ Datasette allows queries to run from the command line using the `--get` option, 
 
 ```makefile
 combined.geojson: project.db
-    pipenv run datasette project.db --get /project/combined.geojson \
+    poetry run datasette project.db --get /project/combined.geojson \
      --load-extension spatialite \
      --setting sql_time_limit_ms 5000 \
      --setting max_returned_rows 20000 \
