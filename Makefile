@@ -1,5 +1,5 @@
 install:
-	poetry install
+	poetry install --no-root
 
 run:
 	# https://docs.datasette.io/en/stable/settings.html#configuration-directory-mode
