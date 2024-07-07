@@ -106,3 +106,5 @@ Here are static versions of the examples above:
 - [California Protected Lands](https://www.calands.org/cpad/) - More information [here](https://simonwillison.net/2021/Jan/24/drawing-shapes-spatialite/)
 - [Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw)
 - [Manatee Carcass Recovery Locations in Florida](https://geodata.myfwc.com/datasets/myfwc::manatee-carcass-recovery-locations-in-florida/about)
+- [Overture maps](https://overturemaps.org/download/)
+- [Boston geospatial data](https://data.boston.gov/group/geospatial)
